@@ -28,31 +28,30 @@ This project showcases log analysis and threat hunting using **Graylog**, an ope
 ```
 sudo systemctl status mongod
 ```
-📸 Screenshot: `screenshots/01_mongod_running.png`
+📸 Screenshot: ![MongoDB Running](screenshots/01_mongod_running.png)
 
 #### Step 2: Check Elasticsearch Status
 ``` 
 sudo systemctl status elasticsearch
 ```
-📸 Screenshot: `02_elasticsearch_running.png`
+📸 Screenshot: ![Elasticsearch Running](screenshots/02_elasticsearch_running.png)
 
 #### Step 3: Check Graylog Status
 ```bash
 sudo systemctl status graylog-server
 ```
-📸 Screenshot: `03_graylog_running.png`
+📸 Screenshot: ![Graylog Running](screenshots/03_graylog_running.png)
 
 #### Step 4: Log into Graylog Web Interface
 - Open a browser and go to: **http://your-server-ip:9000**
 - Log in with **admin credentials**.
 
-📸 Screenshot: `04_graylog_login.png`
+📸 Screenshot: ![Graylog Login](screenshots/04_graylog_login.png)
 
 #### Step 5: Show System Overview in Graylog
 - Navigate to **System > Overview**.
 
-📸 Screenshot: `05_graylog_system_overview.png`
-
+📸 Screenshot: ![Graylog System Overview](screenshots/05_graylog_system_overview.png)
 
 ### 2️⃣ Configure & Import Sample Logs
 
@@ -65,15 +64,13 @@ sudo systemctl status graylog-server
    - Bind to `0.0.0.0`, Port `5140`.
    - Click **Launch Input**.
 
-📸 Screenshot: `06_syslog_input_running.png`
+📸 Screenshot: ![Syslog Input Running](screenshots/06_syslog_input_running.png)
 
 #### Step 2: Verify Logs Are Being Received
 1. In **System > Inputs**, locate your **Syslog UDP** input.
 2. Click **Show Received Messages** to confirm logs are being processed.
 
-📸 Screenshot: `07_logs_received.png`
-
----
+📸 Screenshot: ![Logs Received](screenshots/07_logs_received.png)
 
 ### 3️⃣ Simulating Security Threats
 
@@ -81,13 +78,13 @@ sudo systemctl status graylog-server
 ```
 ssh invalid_user@localhost
 ```
-📸 Screenshot: `08_failed_logins.png`
+📸 Screenshot: ![Failed Logins](screenshots/08_failed_logins.png)
 
 #### Simulating Privilege Escalation
 ```
 sudo -i
 ```
-📸 Screenshot: `09_privilege_escalation.png`
+📸 Screenshot: ![Privilege Escalation](screenshots/09_privilege_escalation.png)
 
 ### Create a Security Dashboard
 *Due to a VM crash, this step could not be completed, but the intended setup involved:*
